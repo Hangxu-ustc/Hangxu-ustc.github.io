@@ -3,7 +3,7 @@ layout: page
 title: 基于 STM32 的智能镜系统
 description: ican 省级二等奖 · 程序编写与 PCB 制板
 importance: 3
-category: work
+category: 工程
 ---
 
 一款集环境监测、信息交互与智能控制功能的简易智能镜，探索嵌入式与物联网技术在智能家居场景中的应用。

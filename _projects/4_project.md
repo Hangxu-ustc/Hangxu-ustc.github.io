@@ -3,7 +3,7 @@ layout: page
 title: 简易 STM32 超声波雷达
 description: 团队合作 · 硬件开发与程序编写
 importance: 4
-category: work
+category: 工程
 ---
 
 基于 STM32 的简易超声波雷达系统，用于测量障碍物距离并实时显示。

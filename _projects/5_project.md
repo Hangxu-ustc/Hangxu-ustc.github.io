@@ -3,7 +3,7 @@ layout: page
 title: JPEG AI 神经图像压缩学习
 description: 论文精读 + 模块复现 + 课程报告
 importance: 5
-category: research
+category: 科研
 ---
 
 多媒体通信课程的学习项目。JPEG AI 是第一个端到端学习的图像压缩标准，值得拆开揉碎看一遍。

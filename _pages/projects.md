@@ -2,10 +2,10 @@
 layout: page
 title: 项目
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: 科研、课程与嵌入式项目。
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [科研, 工程]
 horizontal: false
 ---
 

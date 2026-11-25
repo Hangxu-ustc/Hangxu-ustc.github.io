@@ -3,7 +3,7 @@ layout: page
 title: 基于 IoT 的智能停车场系统
 description: 本科毕业设计 · 树莓派 + YOLOv8 + ESP32
 importance: 2
-category: research
+category: 科研
 ---
 
 毕业设计课题，融合深度学习视觉算法与物联网技术，实现车辆停车的完整业务闭环。
