@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-09-01 09:00:00+0800
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+入学中国科学技术大学信息科学技术学院，攻读硕士学位，研究方向为计算机视觉。

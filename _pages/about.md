@@ -1,17 +1,17 @@
 ---
 layout: about
-title: about
+title: 关于
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 中国科学技术大学 · 信息科学技术学院 · 硕士在读
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>安徽 · 合肥</p>
+    <p>中国科学技术大学 信息科学技术学院</p>
+    <p><a href="mailto:xuhang6644@163.com">xuhang6644@163.com</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+我是**徐航**，中国科学技术大学信息科学技术学院的在读硕士（2026 年入学），本科毕业于合肥工业大学计算机与信息学院电子信息工程专业（2022–2026）。
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+目前的研究兴趣集中在**计算机视觉**，尤其是图像分割与目标检测：我正在系统精读 Segment Anything（SAM）系列及其跨域迁移工作，同时关注神经图像压缩（JPEG AI）与嵌入式视觉系统的落地。本科阶段我做过基于 STM32 的智能镜与超声波雷达，以及基于树莓派和 YOLOv8 的智能停车场毕业设计，习惯把算法真正跑到硬件上。
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+我相信「输出」的力量：读过的论文写成笔记，做过的实验留下脚本，踩过的坑讲给别人听。这个站点记录我的科研进展、项目与随想，也是一张持续更新的电子名片。欢迎通过邮件与我交流。
