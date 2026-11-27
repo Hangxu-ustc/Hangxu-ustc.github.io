@@ -4,7 +4,7 @@ title: 项目
 permalink: /projects/
 description: 科研、课程与嵌入式项目。
 nav: true
-nav_order: 3
+nav_order: 2
 display_categories: [科研, 工程]
 horizontal: false
 ---

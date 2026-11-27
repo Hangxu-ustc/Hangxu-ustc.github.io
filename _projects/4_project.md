@@ -3,6 +3,7 @@ layout: page
 title: 简易 STM32 超声波雷达
 description: 团队合作 · 硬件开发与程序编写
 importance: 4
+img: /assets/img/projects/radar.svg
 category: 工程
 ---
 

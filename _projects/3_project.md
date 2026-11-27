@@ -3,6 +3,7 @@ layout: page
 title: 基于 STM32 的智能镜系统
 description: ican 省级二等奖 · 程序编写与 PCB 制板
 importance: 3
+img: /assets/img/projects/mirror.svg
 category: 工程
 ---
 

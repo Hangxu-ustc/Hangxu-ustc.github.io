@@ -3,6 +3,7 @@ layout: page
 title: JPEG AI 神经图像压缩学习
 description: 论文精读 + 模块复现 + 课程报告
 importance: 5
+img: /assets/img/projects/jpeg.svg
 category: 科研
 ---
 

@@ -3,6 +3,7 @@ layout: page
 title: SAM 跨域迁移综述
 description: 17 页 IEEE 双栏综述 · 130 篇文献 · 9 图 6 表
 importance: 1
+img: /assets/img/projects/sam.svg
 category: 科研
 related_publications: true
 ---
