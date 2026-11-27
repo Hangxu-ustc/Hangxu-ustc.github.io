@@ -9,7 +9,7 @@
 .profile figure,.profile picture,.profile img{width:100%!important;height:auto!important;display:block;margin:0}
 .profile img{border-radius:10px}
 @media (max-width:576px){.profile{width:130px!important;margin-right:1rem!important}}
-</style> <ul> <li> <strong>Research</strong>: Computer Vision · Image Segmentation · Object Detection · Neural Image Compression · Embedded Vision</li> <li> <strong>Education</strong>: B.Eng. in Electronic Information Engineering, Hefei University of Technology (2022–2026) → M.Sc., University of Science and Technology of China (2026– )</li> <li> <strong>Location</strong>: Hefei, Anhui, China</li> <li> <strong>Contact</strong>: <a href="mailto:xuhang6644@163.com">xuhang6644@163.com</a> ｜ <a href="https://github.com/Hangxu-ustc" rel="external nofollow noopener" target="_blank">GitHub</a> ｜ <a href="/en/cv/">CV</a> </li> </ul> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:xuhang6644@163.com" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://github.com/Hangxu-ustc" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="/feed.xml" title="Rss icon"><i class="fa-solid fa-square-rss"></i></a> </div> <div class="contact-note">You can even add a little note about which of these is the best way to reach you. </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 徐航 . Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <style id="af-custom-theme">
+</style> <ul> <li> <strong>Research</strong>: Computer Vision · Image Segmentation · Object Detection · Neural Image Compression · Embedded Vision</li> <li> <strong>Education</strong>: B.Eng. in Electronic Information Engineering, Hefei University of Technology (2022–2026) → M.Sc., University of Science and Technology of China (2026– )</li> <li> <strong>Location</strong>: Hefei, Anhui, China</li> <li> <strong>Contact</strong>: <a href="mailto:xuhang6644@163.com">xuhang6644@163.com</a> ｜ <a href="https://github.com/Hangxu-ustc" rel="external nofollow noopener" target="_blank">GitHub</a> ｜ <a href="/en/cv/">CV</a> </li> </ul> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:xuhang6644@163.com" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://github.com/Hangxu-ustc" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="/feed.xml" title="Rss icon"><i class="fa-solid fa-square-rss"></i></a> </div> <div class="contact-note"></div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 徐航 . Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <style id="af-custom-theme">
   :root{
     --global-theme-color:#004098;
     --global-theme-color-rgb:0,64,152;
@@ -43,13 +43,29 @@
     return { href: en, label: 'EN' };
   }
   function mountLangSwitch() {
+    var p = window.location.pathname;
+    var isEn = (p === '/en' || p === '/en/' || p.indexOf('/en/') === 0);
     var nav = document.querySelector('nav#navbar ul.navbar-nav') || document.querySelector('nav#navbar ul');
     if (!nav) { return; }
+    if (isEn) {
+      var map = {
+        '关于': ['About', '/en/'],
+        '项目': ['Projects', '/en/projects/'],
+        '成果': ['Achievements', '/en/publications/'],
+        '简历': ['CV', '/en/cv/']
+      };
+      Array.prototype.forEach.call(nav.querySelectorAll('a'), function (a) {
+        var t = (a.textContent || '').trim();
+        if (map[t]) { a.textContent = map[t][0]; a.setAttribute('href', map[t][1]); }
+      });
+      var h = document.querySelector('h1');
+      if (h && h.textContent.trim() === '徐航') { h.textContent = 'Xu Hang'; }
+    }
     if (document.getElementById('lang-switch')) { return; }
-    var t = calcSwitch();
+    var t2 = calcSwitch();
     var li = document.createElement('li');
     li.className = 'nav-item';
-    li.innerHTML = '<a id="lang-switch" class="nav-link" href="' + t.href + '" style="font-weight:700;letter-spacing:.06em">' + t.label + '</a>';
+    li.innerHTML = '<a id="lang-switch" class="nav-link" href="' + t2.href + '" style="font-weight:700;letter-spacing:.06em">' + t2.label + '</a>';
     nav.appendChild(li);
   }
   if (document.readyState !== 'loading') { mountLangSwitch(); }
