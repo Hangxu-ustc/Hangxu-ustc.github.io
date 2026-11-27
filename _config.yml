@@ -6,8 +6,7 @@ title: 徐航 # the website title (if blank, full name will be used instead)
 first_name: 徐航
 middle_name:
 last_name:
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   徐航的个人学术主页。中国科学技术大学信息科学技术学院硕士在读，研究方向为计算机视觉、图像分割与神经图像压缩。
 footer_text: >
