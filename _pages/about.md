@@ -5,7 +5,7 @@ permalink: /
 subtitle: 中国科学技术大学 · 信息科学技术学院 · 硕士在读
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
@@ -25,6 +25,14 @@ announcements:
 latest_posts:
   enabled: false
 ---
+
+<style>
+/* 起始页布局：教师主页风格——左侧小头像，右侧简介 */
+.profile{float:left!important;width:180px!important;max-width:42%!important;margin:0 1.6rem 1.2rem 0!important}
+.profile figure,.profile picture,.profile img{width:100%!important;height:auto!important;display:block;margin:0}
+.profile img{border-radius:10px}
+@media (max-width:576px){.profile{width:130px!important;margin-right:1rem!important}}
+</style>
 
 我是 **徐航（Xu Hang）**，中国科学技术大学信息科学技术学院的在读硕士（2026 年入学），本科毕业于合肥工业大学计算机与信息学院电子信息工程专业（2022–2026）。
 
