@@ -16,7 +16,25 @@
   .interest-item {
     padding: 0.5rem 0;
   }
-</style> </div> </div> </div> </article> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 徐航 . Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+</style> </div> </div> </div> </article> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 徐航 . Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <style id="af-custom-theme">
+  :root{
+    --global-theme-color:#004098;
+    --global-theme-color-rgb:0,64,152;
+  }
+  /* 衬线标题 */
+  h1,h2,h3,h4,h5,.post-title{
+    font-family:"Noto Serif SC","Songti SC","STSong","SimSun",Georgia,serif !important;
+    letter-spacing:.01em;
+  }
+  /* 科大蓝链接与强调 */
+  a{color:#004098 !important}
+  a:hover{color:#002f73 !important}
+  .navbar a.active,.navbar a:hover{color:#004098 !important}
+  /* 轻微纸感背景（仅浅色，不影响暗色）*/
+  @media (prefers-color-scheme: light){
+    body{background:#FBFAF6}
+  }
+</style> <script>
   window.alFolio = {
     compatBootstrap: false
   };
