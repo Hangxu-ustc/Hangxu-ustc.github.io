@@ -1,0 +1,55 @@
+{% capture footer_contents %}
+  &copy; Copyright {{ site.time | date: '%Y' }}
+  {{ site.first_name }}
+  {{ site.middle_name }}
+  {{ site.last_name }}. {{ site.footer_text }}
+  {% if site.impressum_path %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+  {% endif %}
+  {% if site.last_updated %}
+    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+  {% endif %}
+{% endcapture %}
+
+{% if site.footer_fixed %}
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      {{ footer_contents }}
+    </div>
+  </footer>
+{% else %}
+  <footer class="sticky-bottom mt-5" role="contentinfo">
+    {% if site.newsletter.enabled %}
+      {% if site.plugins contains 'al_newsletter' %}
+        {% include plugins/al_newsletter_form_center.liquid %}
+      {% else %}
+        {% include newsletter.liquid %}
+      {% endif %}
+    {% endif %}
+
+    <div class="container">
+      {{ footer_contents }}
+    </div>
+  </footer>
+{% endif %}
+
+<!-- ===== 本地主题覆盖：学术极简·留白 + 科大蓝 + 衬线标题 ===== -->
+<style id="af-custom-theme">
+  :root{
+    --global-theme-color:#004098;
+    --global-theme-color-rgb:0,64,152;
+  }
+  /* 衬线标题 */
+  h1,h2,h3,h4,h5,.post-title{
+    font-family:"Noto Serif SC","Songti SC","STSong","SimSun",Georgia,serif !important;
+    letter-spacing:.01em;
+  }
+  /* 科大蓝链接与强调 */
+  a{color:#004098 !important}
+  a:hover{color:#002f73 !important}
+  .navbar a.active,.navbar a:hover{color:#004098 !important}
+  /* 轻微纸感背景（仅浅色，不影响暗色）*/
+  @media (prefers-color-scheme: light){
+    body{background:#FBFAF6}
+  }
+</style>
